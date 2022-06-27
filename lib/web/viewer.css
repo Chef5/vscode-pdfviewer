@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-.textLayer {
+ .textLayer {
   position: absolute;
   text-align: initial;
   left: 0;
@@ -562,6 +562,7 @@
 
 .pdfViewer .canvasWrapper {
   overflow: hidden;
+  filter: invert(88%);
 }
 
 .pdfViewer .page {
@@ -575,7 +576,7 @@
   background-clip: content-box;
   -o-border-image: url(images/shadow.png) 9 9 repeat;
      border-image: url(images/shadow.png) 9 9 repeat;
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
 }
 
 .pdfViewer.removePageBorders .page {
@@ -689,46 +690,45 @@
   --toolbar-icon-opacity: 0.7;
   --doorhanger-icon-opacity: 0.9;
 
-  --main-color: rgba(12, 12, 13, 1);
-  --body-bg-color: rgba(237, 237, 240, 1);
-  --errorWrapper-bg-color: rgba(255, 110, 110, 1);
-  --progressBar-color: rgba(10, 132, 255, 1);
-  --progressBar-indeterminate-bg-color: rgba(221, 221, 222, 1);
-  --progressBar-indeterminate-blend-color: rgba(116, 177, 239, 1);
-  --scrollbar-color: auto;
-  --scrollbar-bg-color: auto;
-  --toolbar-icon-bg-color: rgba(0, 0, 0, 1);
-  --toolbar-icon-hover-bg-color: rgba(0, 0, 0, 1);
+  --main-color: rgba(249, 249, 250, 1);
+  --body-bg-color: rgba(42, 42, 46, 1);
+  --errorWrapper-bg-color: rgba(169, 14, 14, 1);
+  --progressBar-color: rgba(0, 96, 223, 1);
+  --progressBar-indeterminate-bg-color: rgba(40, 40, 43, 1);
+  --progressBar-indeterminate-blend-color: rgba(20, 68, 133, 1);
+  --scrollbar-color: rgba(121, 121, 123, 1);
+  --scrollbar-bg-color: rgba(35, 35, 39, 1);
+  --toolbar-icon-bg-color: rgba(255, 255, 255, 1);
+  --toolbar-icon-hover-bg-color: rgba(255, 255, 255, 1);
 
-  --sidebar-narrow-bg-color: rgba(237, 237, 240, 0.9);
-  --sidebar-toolbar-bg-color: rgba(245, 246, 247, 1);
-  --toolbar-bg-color: rgba(249, 249, 250, 1);
-  --toolbar-border-color: rgba(204, 204, 204, 1);
-  --button-hover-color: rgba(221, 222, 223, 1);
-  --toggled-btn-color: rgba(0, 0, 0, 1);
+  --sidebar-narrow-bg-color: rgba(42, 42, 46, 0.9);
+  --sidebar-toolbar-bg-color: rgba(50, 50, 52, 1);
+  --toolbar-bg-color: rgba(56, 56, 61, 1);
+  --toolbar-border-color: rgba(12, 12, 13, 1);
+  --button-hover-color: rgba(102, 102, 103, 1);
+  --toggled-btn-color: rgba(255, 255, 255, 1);
   --toggled-btn-bg-color: rgba(0, 0, 0, 0.3);
   --toggled-hover-active-btn-color: rgba(0, 0, 0, 0.4);
-  --dropdown-btn-bg-color: rgba(215, 215, 219, 1);
+  --dropdown-btn-bg-color: rgba(74, 74, 79, 1);
   --separator-color: rgba(0, 0, 0, 0.3);
-  --field-color: rgba(6, 6, 6, 1);
-  --field-bg-color: rgba(255, 255, 255, 1);
-  --field-border-color: rgba(187, 187, 188, 1);
-  --findbar-nextprevious-btn-bg-color: rgba(227, 228, 230, 1);
-  --treeitem-color: rgba(0, 0, 0, 0.8);
-  --treeitem-hover-color: rgba(0, 0, 0, 0.9);
-  --treeitem-selected-color: rgba(0, 0, 0, 0.9);
-  --treeitem-selected-bg-color: rgba(0, 0, 0, 0.25);
-  --sidebaritem-bg-color: rgba(0, 0, 0, 0.15);
-  --doorhanger-bg-color: rgba(255, 255, 255, 1);
-  --doorhanger-border-color: rgba(12, 12, 13, 0.2);
-  --doorhanger-hover-color: rgba(12, 12, 13, 1);
-  --doorhanger-hover-bg-color: rgba(237, 237, 237, 1);
-  --doorhanger-separator-color: rgba(222, 222, 222, 1);
-  --overlay-button-border: 0 none;
-  --overlay-button-bg-color: rgba(12, 12, 13, 0.1);
-  --overlay-button-hover-bg-color: rgba(12, 12, 13, 0.3);
+  --field-color: rgba(250, 250, 250, 1);
+  --field-bg-color: rgba(64, 64, 68, 1);
+  --field-border-color: rgba(115, 115, 115, 1);
+  --findbar-nextprevious-btn-bg-color: rgba(89, 89, 89, 1);
+  --treeitem-color: rgba(255, 255, 255, 0.8);
+  --treeitem-hover-color: rgba(255, 255, 255, 0.9);
+  --treeitem-selected-color: rgba(255, 255, 255, 0.9);
+  --treeitem-selected-bg-color: rgba(255, 255, 255, 0.25);
+  --sidebaritem-bg-color: rgba(255, 255, 255, 0.15);
+  --doorhanger-bg-color: rgba(74, 74, 79, 1);
+  --doorhanger-border-color: rgba(39, 39, 43, 1);
+  --doorhanger-hover-color: rgba(249, 249, 250, 1);
+  --doorhanger-hover-bg-color: rgba(93, 94, 98, 1);
+  --doorhanger-separator-color: rgba(92, 92, 97, 1);
+  --overlay-button-bg-color: rgba(92, 92, 97, 1);
+  --overlay-button-hover-bg-color: rgba(115, 115, 115, 1);
 
-  --loading-icon: url(images/loading.svg);
+  --loading-icon: url(images/loading-dark.svg);
   --treeitem-expanded-icon: url(images/treeitem-expanded.svg);
   --treeitem-collapsed-icon: url(images/treeitem-collapsed.svg);
   --toolbarButton-menuArrow-icon: url(images/toolbarButton-menuArrow.svg);
@@ -2070,7 +2070,7 @@ html[dir="rtl"] .thumbnail {
 
 .thumbnailImage {
   border: 1px solid rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3); */
   opacity: 0.8;
   z-index: 99;
   background-color: rgba(255, 255, 255, 1);
@@ -2080,6 +2080,7 @@ html[dir="rtl"] .thumbnail {
 .thumbnailSelectionRing {
   border-radius: 2px;
   padding: 7px;
+  filter: invert(88%);
 }
 
 a:focus > .thumbnail > .thumbnailSelectionRing > .thumbnailImage,
@@ -2524,7 +2525,7 @@ html[dir="rtl"] #documentPropertiesOverlay .row > * {
     border: none;
     box-shadow: none;
     background-clip: content-box;
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
   }
 
   .page[data-loaded] {
