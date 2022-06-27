@@ -2,7 +2,9 @@
 
 Display pdf in VSCode.
 
-![screenshot](https://user-images.githubusercontent.com/3643499/84454816-98fcd600-ac96-11ea-822c-3ae1e1599a13.gif)
+**在原插件上改了一下，强行设置为暗黑模式，在VSCode中阅读pdf**
+
+![screenshot](https://user-images.githubusercontent.com/38160059/175881799-0433221b-7333-4c37-90bf-6153c2de089a.png)
 
 ## Contribute
 
